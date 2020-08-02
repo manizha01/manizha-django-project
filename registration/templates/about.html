@@ -1,0 +1,83 @@
+
+{%  extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<ul>
+<h1> {{ heading }}</h1>
+<br>
+
+<div class="container">
+<div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+
+               <img src="{% static 'images/12.jpg' %}" width="700" height="300" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="{% static 'images/12.jpg' %}">Item One</a>
+              </h4>
+              <h5>$98.99</h5>
+              <p class="card-text">It is avalible in white color and one desgin but diffrent sizes like S, M, L, XL </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <img src="{% static 'images/14.jpg' %}" width="700" height="300" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="{% static 'images/14.jpg' %}">Item two</a>
+              </h4>
+              <h5>$88.99</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!
+                Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <img src="{% static 'images/33.jpg' %}" width="700" height="300" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="{% static 'images/33.jpg' %}">Item Three</a>
+              </h4>
+              <h5>$76.99</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.col-lg-9 -->
+
+  </div>
+  <!-- /.row -->
+
+</div>
+<!-- /.container -->
+<br>
+
+<p>Our production company is more than happy to take your orders online or by visiting
+    our branch, We take all type of orders and make any type of cloths which you need in your
+    profesional or daily life. We will make it from zero till the end and our all desgins has 
+    the best qualiy in  town, once you visit us, you will be our ever customer and we offer very 
+    good prices for our product.Hop to see you soon.</p>
+
+{% endblock %}

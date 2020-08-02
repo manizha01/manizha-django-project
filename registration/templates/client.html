@@ -1,0 +1,20 @@
+{%  extends 'base.html' %}
+
+{% block content %}
+
+<ul>
+<h2> Client Details </h2>
+<ul>
+        <li>ID: {{ records.id }}</li>
+        <li>First Name: {{ records.first }}</li>
+        <li>Last Name: {{ records.last }}</li> 
+        <li>Email Address: {{ records.email }}</li>
+        <li>City: {{ records.city }}</li>
+
+    {% for item in records.dress.all %}
+     <li>{{ item }}</li>
+    {% endfor %}
+</ul>
+</ul>
+
+{% endblock %}

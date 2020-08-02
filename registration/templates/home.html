@@ -1,0 +1,34 @@
+{%  extends 'base.html' %}
+
+{% block content %}
+
+<div>
+<ul>
+{% for client in clients %}
+<!-- make as link-->
+<li><h3><a href="{% url 'client_detail' client.id %}">{{ client.first | capfirst }} {{ client.last | capfirst }}  ID: {{ client.id }}</a></h3></li>
+
+<hr>
+
+<ul>
+
+<li><p> email: {{ client.email }}</p></li>
+<li><p> city: {{ client.city }}</p></li>
+<li><p> phone: {{ client.phone }}</p></li>
+{% if client.company %}
+<li><p> company: {{ client.company}}</p></li>
+{% endif %}
+</ul>
+
+{% endfor %}
+
+</ul>
+</div>
+
+<!--<ul>
+{% for client in clients %}
+<li>{{ client.first }}</li>
+{% endfor %}
+</ul>-->
+
+{% endblock %}

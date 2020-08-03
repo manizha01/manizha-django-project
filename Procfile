@@ -1,2 +1,3 @@
+
 release: python manage.py migrate
-web: gunicorn Razban.wsgi --log-file -
+web: gunicorn razban.wsgi --log-file -

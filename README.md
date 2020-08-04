@@ -1,7 +1,5 @@
 ﻿# manizha-django-project
  
- 
-# manizha Django project
 
 #python Django
 

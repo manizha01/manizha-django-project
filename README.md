@@ -1,4 +1,4 @@
-﻿# manizha-django-project
+# manizha-django-project
  
 
 #python Django
